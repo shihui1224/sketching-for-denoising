@@ -3,7 +3,7 @@ r = 20; k = 20;
 skw_file = 'sk_file.mat';
 disp('loading sketch file');
 load(skw_file,'skw');
-estmix = gmm_estimator_n(skw, r, op, 'LBFGS_smallNbIt', 5000, 'LBFGS_bigNbIt', 300);
+estmix = gmm_estimator_n(skw, r, op, 'LBFGS_smallNbIt', 500, 'LBFGS_bigNbIt', 3000);
 disp('Estimate mixture model...');
 tstart = tic;
 [params, wts, nres] = estmix.estim(k);
