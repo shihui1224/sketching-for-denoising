@@ -14,7 +14,7 @@
 % You should have received a copy of the GNU Affero General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-op = 1;
+op = 0; %% op =0  ==> lbfgsb for gradient descent
 r = 20; k = 20;
 skw_file = 'sk_file.mat';
 disp('loading sketch file');
